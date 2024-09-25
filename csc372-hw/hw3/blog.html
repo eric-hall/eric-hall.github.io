@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My UNCG Lunch Spots</title>
+    <script src="blog.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>UNCG Campus: My Favorite Restaurants</h1>
+        <button onclick="location.href='../index.html'">Back</button>
+        <button onclick="location.href='meal_plan.html'">Meal Plan</button>
+    </header>
+
+    <main>
+        <section>
+            <p>Looking for some top picks for lunch at UNCG? Well, here, I'll list 3 of my go-to spots!
+                Depending on how hungry you are, what you've got a taste for, or your price point,
+                there's always a good option nearby. Whether it's hot pizza, a stacked sandwich, or something southern,
+                I've got you covered. Let's check it out...
+            </p>
+        </section>
+
+        <!-- Slices Pizza by Tony -->
+        <section class="restaurant-section">
+            <h2>Slices Pizza by Tony</h2>
+            <p>Perfect for a quick and easy lunch! Tony's is a local joint with tons of New York-style, large-slice
+                pizza options. They'll bring your slice back to life in seconds by tossing it into their wood-fired
+                oven!
+            <p>
+            <button onclick="toggleAside('aside1')">Location</button>
+            <aside id="aside1">
+                <a href="https://maps.app.goo.gl/y6MYSNn6D19SNZs77">401 Tate St, Greensboro, NC 27403</a>
+                <br>
+                <a href="https://slicesbytony.com/">Website</a>
+            </aside>
+            <div class="recommend-container">
+                <article
+                    data-description="The wood-fired pizza is the featured dish at Tony's. It's crispy, smoky, and absolutely delicious. A must-try for pizza lovers!">
+                    <div class="recommend-label">Wood-fired Pizza</div>
+                    <img src="images/tonypizza.jpg">
+                </article>
+                <article
+                    data-description="Tony's Chicken Salad is fresh, filling, and perfect for a lighter lunch. With juicy chicken and crisp veggies, it's hard to beat.">
+                    <div class="recommend-label">Chicken Salad</div>
+                    <img src="images/tonysalad.jpg">
+                </article>
+                <article
+                    data-description="The Fresco Sandwich combines fresh ingredients and perfect seasoning. Ideal for a quick, satisfying lunch on the go.">
+                    <div class="recommend-label">Fresco Sandwich</div>
+                    <img src="images/tonyfresco.jpg">
+                </article>
+            </div>
+            <!-- Dropdown for this section -->
+            <div class="recommend-dropdown"></div>
+        </section>
+
+        <!-- Old Town Draught House -->
+        <section class="restaurant-section">
+            <h2>Old Town Draught House</h2>
+            <p>Great for lunch or dinner! Let's be clear, though: it's a pub! But, students of all ages can enjoy the
+                fantastic wraps, split some apps, and a wide variety of hot sandwiches.
+            <p>
+            <button onclick="toggleAside('aside2')">Location</button>
+            <aside id="aside2">
+                <a href="https://maps.app.goo.gl/gvfyUodzFvqPBFdL6">1205 Spring Garden St, Greensboro, NC 27403</a>
+                <br>
+                <a href="https://oldtowndraught.com/">Website</a>
+            </aside>
+            <div class="recommend-container">
+                <article
+                    data-description="Old Town is the place to be after a long week of studying. Their sandwiches are filling and pair great with your favorite drink.">
+                    <div class="recommend-label">Chicken Sandwich</div>
+                    <img src="images/oldtownsandwich.jpg" alt="Sandwich">
+                </article>
+                <article
+                    data-description="Reubens are hard to get right and let me tell you... Old Town gets it perfectly. You have to get the fries with that!">
+                    <div class="recommend-label">The Reuben</div>
+                    <img src="images/oldtownreuben.jpg" alt="Reuben">
+                </article>
+                <article
+                    data-description="Sometimes, they'll have specialty meals on the menu. If they have a wrap, or a meat 'n' two... you'll know where to find me!">
+                    <div class="recommend-label">Special Lunches</div>
+                    <img src="images/oldtownchicken.jpg" alt="Chicken">
+                </article>
+            </div>
+            <!-- Dropdown for this section -->
+            <div class="recommend-dropdown"></div>
+        </section>
+
+        <!-- The Cafe -->
+        <section class="restaurant-section">
+            <h2>The Cafe</h2>
+            <p>Right across from the bookstore and in the center of the campus is the EUC Cafe, full of mini versions of restaurants you're familiar with!
+                They take flex pay and have a huge dining area which is always lively. I'll list a few of my favorite picks!
+            <p>
+                <button onclick="toggleAside('aside3')">Location</button>
+            <aside id="aside3">
+                <a href="https://maps.app.goo.gl/jjPJr4c49q8yo6zH8">507 Stirling St, Greensboro, NC 27412</a>
+                <br>
+                <a href="https://euc.uncg.edu/inside-the-euc/">Website</a>
+            </aside>
+            <div class="recommend-container">
+                <article
+                    data-description="If you're looking for something healthy and light, look no further than Pita Delite... Wow, that was cheesy, just like their quesadillas!">
+                    <div class="recommend-label">Pita Delite</div>
+                    <img src="images/cafepitadelite.jpg" alt="Pita Delite">
+                </article>
+                <article
+                    data-description="I like a bit of spice sometimes. Whenever I get Salsaritas, I always top it off with a bit of hot sauce. It's great tex mex and one of the few rice options!">
+                    <div class="recommend-label">Salsaritas</div>
+                    <img src="images/cafesalsaritas.jpg" alt="Salsaritas">
+                </article>
+                <article
+                    data-description="Don't overthink it. Some hot fried chicken fingers and fries is good every once in a while!">
+                    <div class="recommend-label">Bojangles</div>
+                    <img src="images/cafebojangles.jpg" alt="Bojangles">
+                </article>
+            </div>
+            <!-- Dropdown for this section -->
+            <div class="recommend-dropdown"></div>
+        </section>
+    </main>
+</body>
+
+</html>

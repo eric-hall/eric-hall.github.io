@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 20px;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+img {
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommend-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recommend-selected img {
+    transform: scale(1.1);
+}
+
+.recommend-label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.recommend-selected .recommend-label {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Dropdown description */
+.recommend-dropdown {
+    margin: auto;
+    margin-top: 20px;
+    display: none;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+button {
+    padding: 8px;
+    background-color: #1f80e3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1a6bb0;
+}
+
+aside {
+    background-color: #1e1e1e;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+
+
+.container {
+    display: flex;
+}
+
+.recommendations,
+.meal-plan {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+}
+
+.recommendations h2,
+.meal-plan h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+#total-cost {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
