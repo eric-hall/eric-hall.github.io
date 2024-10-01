@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YoYoThrow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>YoYoThrow</h1>
+            <p>spool up & throw down</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <!-- TODO: Remove strike tags -->
+                <s>
+                    <li><a href="#">About Us</a></li>
+                </s>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Find your next yoyo...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Shopping Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/yoyo1.png" alt="AceYo Mercy 4"></td>
+                        <td>AceYo Mercy 4</td>
+                        <td>$59.99</td>
+                        <td class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </td>
+                        <td class="item-total">$59.99</td>
+                        <td><button class="remove-btn">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/yoyo2.png" alt="OneDrop Terrarian"></td>
+                        <td>OneDrop Terrarian</td>
+                        <td>$34.99</td>
+                        <td class="quantity">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </td>
+                        <td class="item-total">$34.99</td>
+                        <td><button class="remove-btn">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="checkout-section">
+                <h3>Subtotal: <span class="subtotal">$94.98</span></h3>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YoYoThrow. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
