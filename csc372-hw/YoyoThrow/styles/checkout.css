@@ -1,0 +1,49 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 50px;
+    height: auto;
+}
+
+.quantity {
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.checkout-section {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(32, 32, 32, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.checkout-section .subtotal {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffd700;
+}
