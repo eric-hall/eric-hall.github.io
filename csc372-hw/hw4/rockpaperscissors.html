@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <button onclick="location.href='../index.html'">Back</button>
+
+    <!-- Player options -->
+    <div class="container">
+        <div class="images-row" id="player-options">
+            <img src="rock.png" id="rock" onclick="selectPlayerChoice(this)">
+            <img src="paper.png" id="paper" onclick="selectPlayerChoice(this)">
+            <img src="scissors.png" id="scissors" onclick="selectPlayerChoice(this)">
+        </div>
+        <div class="label" id="player-label">Your throw</div>
+    </div>
+
+    <!-- Computer option -->
+    <div class="container">
+        <div class="images-row">
+            <img class="opponent-img" src="question-mark.png" id="opponent-choice" onclick="startGame()">
+        </div>
+        <div class="label" id="opponent-label">Click to roll computer's hand</div>
+    </div>
+
+    <div class="container">
+        <button id="next-game-button" disabled="true" onclick="resetForNextGame()">Next game?</button>
+        <button id="reset-scores-button" disabled="true" onclick="resetScores()">Reset scores</button>
+        <div class="label" id="player-score">Player score:</div>
+        <div class="label" id="opponent-score">Computer score:</div>
+    </div>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
