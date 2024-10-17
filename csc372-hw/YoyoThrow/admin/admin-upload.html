@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bulk Upload Products</title>
+    <link rel="stylesheet" href="../styles/admin-styles.css">
+    <link rel="icon" type="image/png" href="../resources/images/favicon.png">
+    <script src="admin-includes.js"></script>
+    <script src="admin-upload.js"></script>
+</head>
+
+<body>
+
+    <div id="admin-header"></div>
+
+    <main>
+        <section class="hero">
+            <h2>Bulk Upload Products</h2>
+            <p>To bulk upload products, please select a JSON file that contains an array of product objects. All fields
+                are required, except for the <code>url</code> field, which can be null. Each product must have
+                a unique <code>id</code>. The JSON format should look like this:</p>
+
+            <pre class="json-pre"><code class="json-code">
+    [
+        {
+            <span class="json-key">"id"</span>: <span class="json-number">1</span>,
+            <span class="json-key">"name"</span>: <span class="json-string">"AceYo Mercy 4"</span>,
+            <span class="json-key">"description"</span>: <span class="json-string">"Competition-ready."</span>,
+            <span class="json-key">"category"</span>: <span class="json-string">"yo-yo"</span>,
+            <span class="json-key">"image"</span>: <span class="json-string">"resources/images/yoyo1.png"</span>,
+            <span class="json-key">"price"</span>: <span class="json-number">59.99</span>,
+            <span class="json-key">"url"</span>: <span class="json-string">"details.html"</span>
+        }
+    ]
+            </code></pre>
+
+        </section>
+
+        <section class="hero">
+            <input type="file" id="jsonFile" accept=".json">
+            <button onclick="uploadJSON()">Upload</button>
+            <p id="output"></p>
+        </section>
+    </main>
+
+</body>
+
+</html>

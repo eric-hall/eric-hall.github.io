@@ -1,0 +1,84 @@
+@import url("styles.css");
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+th, button {
+    padding: 4px;
+}
+
+tr:nth-child(even) {
+    background-color: #272727;
+}
+
+.buttons-row {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="file"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .upload-error {
+    color: red;
+    font-weight: bold;
+}
+
+.hero .upload-success {
+    color: green;
+    font-weight: bold;
+}
+
+/* Style for the JSON code block... This is terrible and needs to be improved */
+.json-pre {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+    justify-content: left;
+}
+
+.json-code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.json-code .json-key {
+    color: #f08d49;
+}
+
+.json-code .json-value {
+    color: #6a8759;
+}
+
+.json-code .json-string {
+    color: #6a8759;
+}
+
+.json-code .json-boolean {
+    color: #569cd6;
+}
+
+.json-code .json-number {
+    color: #b5cea8;
+}

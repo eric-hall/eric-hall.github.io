@@ -1,3 +1,5 @@
+window.addEventListener("load", loadComponents, true);
+
 function loadComponents() {
     // Load header and footer
     fetch('header.html')
@@ -11,5 +13,3 @@ function loadComponents() {
             document.getElementById('footer').innerHTML = data;
         });
 }
-
-window.onload = loadComponents;

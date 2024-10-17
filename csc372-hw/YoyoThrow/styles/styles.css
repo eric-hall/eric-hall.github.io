@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: url('images/damascus.jpg') no-repeat center center fixed;
+    background: url('../resources/images/damascus.jpg') no-repeat center center fixed;
     background-size: cover;
     background-blend-mode: multiply;
     background-color: #080808;

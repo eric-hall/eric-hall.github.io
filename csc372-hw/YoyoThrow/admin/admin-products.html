@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Product Listing</title>
+    <link rel="stylesheet" href="../styles/admin-styles.css">
+    <link rel="icon" type="image/png" href="../resources/images/favicon.png">
+    <script src="admin-includes.js"></script>
+    <script src="admin-products.js"></script>
+</head>
+
+<body>
+
+    <div id="admin-header"></div>
+
+    <main>
+        <section class="hero">
+            <h1>Product Listing</h1>
+
+            <div class="buttons-row">
+                <button onclick="saveChanges()" class="common-btn">Save</button>
+                <a href="admin-upload.html" class="common-btn">Bulk Upload</a>
+            </div>
+
+            <table id="product-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Image Path</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- admin-products.js -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+</body>
+
+</html>

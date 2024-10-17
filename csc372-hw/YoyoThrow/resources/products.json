@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "AceYo Mercy 4",
+        "description": "Competition-ready.",
+        "category": "yo-yo",
+        "image": "resources/images/yoyo1.png",
+        "price": 59.99,
+        "url": "details.html"
+    },
+    {
+        "id": 2,
+        "name": "OneDrop Terrarian",
+        "description": "From Terraria!",
+        "category": "yo-yo",
+        "image": "resources/images/yoyo2.png",
+        "price": 34.99,
+        "url": null
+    },
+    {
+        "id": 3,
+        "name": "YJYOYO Time Slip",
+        "description": "Perfect for intermediate players.",
+        "category": "yo-yo",
+        "image": "resources/images/yoyo3.png",
+        "price": 24.99,
+        "url": null
+    },
+    {
+        "id": 4,
+        "name": "YYF Godspeed",
+        "description": "Great for learning new tricks.",
+        "category": "yo-yo",
+        "image": "resources/images/yoyo4.png",
+        "price": 19.99,
+        "url": null
+    }
+]
