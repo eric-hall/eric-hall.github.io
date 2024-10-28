@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <button onclick="location.href='../index.html'">Back</button>
+
+        <h1>GitHub Repositories</h1>
+        <div class="search-container">
+            <input type="text" id="username" placeholder="Enter GitHub username" value="eric-hall"/>
+            <button onclick="loadRepositories()">Search</button>
+        </div>
+
+        <div id="pagination">
+            <button id="prevBtn" onclick="prevPage()">Previous</button>
+            <span id="pageNumber">Page: 1</span>
+            <button id="nextBtn" onclick="nextPage()">Next</button>
+        </div>
+
+        <div id="repositories-grid" class="grid-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
