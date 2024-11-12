@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <button onclick="location.href='../../index.html'">Back</button>
+
+    <h1>Welcome to JokeBook</h1>
+
+    <div class="joke-display">
+        <h2>Random Joke</h2>
+        <p id="random-joke">Loading...</p>
+        <button id="random-joke-button">Get Another Joke</button>
+    </div>
+
+    <div class="category-list">
+        <h2>Joke Categories</h2>
+        <ul id="categories-list"></ul>
+    </div>
+
+    <div class="search-section">
+        <h3>Search Jokes by Category</h3>
+        <input type="text" id="category-input" placeholder="Enter category name">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="category-jokes" class="joke-list">
+        <!-- Jokes will be displayed here -->
+    </div>
+
+    <div class="new-joke-form">
+        <h3>Add a New Joke</h3>
+        <form id="joke-form">
+            <input type="text" id="joke-setup" placeholder="Setup" required><br><br>
+            <input type="text" id="joke-delivery" placeholder="Delivery" required><br><br>
+            <input type="text" id="joke-category" placeholder="Category" required><br><br>
+            <button type="submit">Add Joke</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+</body>
+
+</html>

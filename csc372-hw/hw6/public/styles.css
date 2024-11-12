@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.joke-display,
+.category-list,
+.search-section,
+.new-joke-form {
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
