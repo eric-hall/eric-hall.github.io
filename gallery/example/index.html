@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eric Hall</title>
+  <title>Example sketch — Gallery — Eric Hall</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -23,33 +23,19 @@
   </header>
 
   <main>
-    <h1>Eric Hall</h1>
-    <p>Welcome — this site is a work in progress. Here's where to look around.</p>
+    <h1>Example sketch</h1>
+    <p>Tap or click inside the canvas to add a bouncing dot. This is a placeholder sketch standing in for the real Processing-to-p5.js translations, just to prove out the gallery page template.</p>
 
-    <ul class="card-grid">
-      <li>
-        <a class="card" href="/gallery/index.html">
-          <h2>Gallery</h2>
-          <p>Interactive p5.js sketches, translated from old Processing work.</p>
-        </a>
-      </li>
-      <li>
-        <a class="card" href="/other/index.html">
-          <h2>Other Work</h2>
-          <p>One-off recordings and screenshots that don't fit the gallery.</p>
-        </a>
-      </li>
-      <li>
-        <a class="card" href="/contact/index.html">
-          <h2>Contact</h2>
-          <p>Ways to reach me.</p>
-        </a>
-      </li>
-    </ul>
+    <div class="sketch-wrapper" id="sketch-container"></div>
+
+    <p><a href="/gallery/index.html">&larr; Back to gallery</a></p>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Eric Hall</p>
+    <p><a href="/index.html">&larr; Home</a></p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="/gallery/example/sketch.js"></script>
 </body>
 </html>

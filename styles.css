@@ -6,10 +6,175 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
+  color: #1a1a1a;
 }
 
 main {
   max-width: 40rem;
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+a {
+  color: #1a5fb4;
+}
+
+/* ---- Site header / nav ---- */
+
+.site-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.nav {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+}
+
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-toggle-label {
+  display: block;
+  width: 1.75rem;
+  height: 1.25rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+  content: "";
+}
+
+.nav-toggle-label span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-toggle-label span::before {
+  top: -8px;
+}
+
+.nav-toggle-label span::after {
+  top: 8px;
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-toggle:checked ~ .nav-links {
+  display: block;
+}
+
+.nav-links li + li {
+  margin-top: 0.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+@media (min-width: 700px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    width: auto;
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  .nav-links li + li {
+    margin-top: 0;
+  }
+}
+
+/* ---- Site footer ---- */
+
+.site-footer {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ---- Card grid (used by gallery + other-work indexes, and home links) ---- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 700px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+.card.placeholder {
+  color: #888;
+  border-style: dashed;
+}
+
+/* ---- p5.js canvas wrapper (keeps sketches responsive/mobile-safe) ---- */
+
+.sketch-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.sketch-wrapper canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
