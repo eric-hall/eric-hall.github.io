@@ -29,8 +29,23 @@
     <ul class="card-grid">
       <li>
         <a class="card" href="/gallery/example/index.html">
-          <h2>Example sketch</h2>
-          <p>A small placeholder sketch that proves out the gallery page template — real translated sketches will replace/join this.</p>
+          <div class="card-thumb" id="thumb-bouncing-dots"></div>
+          <h2>Bouncing Dots</h2>
+          <p>A small placeholder sketch that proves out the gallery page template — real translated sketches will join it.</p>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="/gallery/flow-field/index.html">
+          <div class="card-thumb" id="thumb-flow-field"></div>
+          <h2>Flow Field</h2>
+          <p>Particles drifting along a Perlin-noise vector field, leaving fading trails.</p>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="/gallery/orbiters/index.html">
+          <div class="card-thumb" id="thumb-orbiters"></div>
+          <h2>Orbiters</h2>
+          <p>Particles orbiting a center point at varying radius and speed.</p>
         </a>
       </li>
     </ul>
@@ -39,5 +54,10 @@
   <footer class="site-footer">
     <p><a href="/index.html">&larr; Home</a></p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="/gallery/example/thumb.js"></script>
+  <script src="/gallery/flow-field/thumb.js"></script>
+  <script src="/gallery/orbiters/thumb.js"></script>
 </body>
 </html>

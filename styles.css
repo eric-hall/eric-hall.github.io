@@ -1,3 +1,14 @@
+:root {
+  --bg: #12141a;
+  --bg-elevated: #1a1d26;
+  --text: #e7e6e3;
+  --text-muted: #9aa0ae;
+  --accent: #5eead4;
+  --accent-soft: #8b8cf8;
+  --border: rgba(255, 255, 255, 0.1);
+  --border-dashed: rgba(255, 255, 255, 0.18);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +17,40 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
-  color: #1a1a1a;
+  color: var(--text);
+  background: var(--bg);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* ---- Subtle background ambiance ---- */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(40rem 30rem at 15% 20%, rgba(94, 234, 212, 0.16), transparent 60%),
+    radial-gradient(36rem 28rem at 85% 75%, rgba(139, 140, 248, 0.14), transparent 60%);
+  background-repeat: no-repeat;
+  animation: ambient-drift 45s ease-in-out infinite alternate;
+}
+
+@keyframes ambient-drift {
+  from {
+    background-position: 0% 0%, 100% 100%;
+  }
+  to {
+    background-position: 10% 8%, 90% 92%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
 }
 
 main {
@@ -16,13 +60,14 @@ main {
 }
 
 a {
-  color: #1a5fb4;
+  color: var(--accent);
 }
 
 /* ---- Site header / nav ---- */
 
 .site-header {
-  border-bottom: 1px solid #ddd;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
 }
 
 .nav {
@@ -39,7 +84,7 @@ a {
 .nav-brand {
   font-weight: bold;
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--text);
   font-size: 1.1rem;
 }
 
@@ -64,7 +109,7 @@ a {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #1a1a1a;
+  background: var(--text);
   content: "";
 }
 
@@ -99,7 +144,7 @@ a {
 
 .nav-links a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: var(--text);
 }
 
 @media (min-width: 700px) {
@@ -125,7 +170,7 @@ a {
   max-width: 40rem;
   margin: 0 auto;
   padding: 2rem 1rem;
-  color: #666;
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
@@ -148,7 +193,8 @@ a {
 
 .card {
   display: block;
-  border: 1px solid #ddd;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
   border-radius: 0.5rem;
   padding: 1rem;
   text-decoration: none;
@@ -161,8 +207,9 @@ a {
 }
 
 .card.placeholder {
-  color: #888;
+  color: var(--text-muted);
   border-style: dashed;
+  border-color: var(--border-dashed);
 }
 
 /* ---- p5.js canvas wrapper (keeps sketches responsive/mobile-safe) ---- */
@@ -171,10 +218,28 @@ a {
   max-width: 100%;
   overflow: hidden;
   margin: 1.5rem 0;
+  border-radius: 0.5rem;
 }
 
 .sketch-wrapper canvas {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* ---- Gallery card thumbnails ---- */
+
+.card-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  margin-bottom: 0.75rem;
+  background: var(--bg);
+}
+
+.card-thumb canvas {
+  width: 100%;
+  height: 100%;
   display: block;
 }

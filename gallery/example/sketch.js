@@ -32,7 +32,7 @@ new p5((p) => {
   };
 
   p.draw = () => {
-    p.background(220, 20, 15);
+    p.background(p.color("#12141a"));
     dots.forEach((d) => {
       d.x += d.vx;
       d.y += d.vy;
