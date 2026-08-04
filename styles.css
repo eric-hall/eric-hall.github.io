@@ -243,3 +243,15 @@ a {
   height: 100%;
   display: block;
 }
+
+/* ---- Sketch controls (e.g. debug-view toggles) below a sketch-wrapper ---- */
+
+.sketch-controls {
+  margin-top: -0.75rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.sketch-controls label {
+  cursor: pointer;
+}

@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orbiters — Gallery — Eric Hall</title>
+  <title>Gallery — Eric Hall</title>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/gallery/shared/gallery-page.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -23,8 +24,8 @@
   </header>
 
   <main>
-    <h1>Orbiters</h1>
-    <p>Particles orbit a center point at varying radius and speed. Tap or click anywhere to add a new orbiter — its distance from center sets its orbit radius.</p>
+    <h1 id="sketch-title"></h1>
+    <p id="sketch-description"></p>
 
     <div class="sketch-wrapper" id="sketch-container"></div>
 
@@ -36,6 +37,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
-  <script src="/gallery/orbiters/sketch.js"></script>
+  <script src="/gallery/shared/theme.js"></script>
+  <script src="/gallery/minesweeper/sketch.js"></script>
 </body>
 </html>

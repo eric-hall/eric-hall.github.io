@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example sketch — Gallery — Eric Hall</title>
+  <title>Gallery — Eric Hall</title>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/gallery/shared/gallery-page.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -23,8 +24,8 @@
   </header>
 
   <main>
-    <h1>Example sketch</h1>
-    <p>Tap or click inside the canvas to add a bouncing dot. This is a placeholder sketch standing in for the real Processing-to-p5.js translations, just to prove out the gallery page template.</p>
+    <h1 id="sketch-title"></h1>
+    <p id="sketch-description"></p>
 
     <div class="sketch-wrapper" id="sketch-container"></div>
 
@@ -36,6 +37,8 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
-  <script src="/gallery/example/sketch.js"></script>
+  <script src="/gallery/shared/theme.js"></script>
+  <script src="/gallery/shared/grid-layout.js"></script>
+  <script src="/gallery/maze-solver/sketch.js"></script>
 </body>
 </html>

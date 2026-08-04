@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flow Field — Gallery — Eric Hall</title>
+  <title>Gallery — Eric Hall</title>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/gallery/shared/gallery-page.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -23,8 +24,8 @@
   </header>
 
   <main>
-    <h1>Flow Field</h1>
-    <p>Particles drift along a Perlin-noise vector field, leaving fading trails. Tap or click to add a burst of new particles.</p>
+    <h1 id="sketch-title"></h1>
+    <p id="sketch-description"></p>
 
     <div class="sketch-wrapper" id="sketch-container"></div>
 
@@ -36,6 +37,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
-  <script src="/gallery/flow-field/sketch.js"></script>
+  <script src="/gallery/shared/theme.js"></script>
+  <script src="/gallery/rotating-squares/sketch.js"></script>
 </body>
 </html>
