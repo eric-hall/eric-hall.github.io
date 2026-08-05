@@ -222,8 +222,10 @@ a {
 }
 
 .sketch-wrapper canvas {
-  max-width: 100%;
-  height: auto;
+  /* p5.js sets inline width/height styles on the canvas; !important is needed
+     to override them so the canvas can scale down on narrow viewports. */
+  max-width: 100% !important;
+  height: auto !important;
   display: block;
 }
 

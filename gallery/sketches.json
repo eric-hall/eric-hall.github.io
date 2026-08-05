@@ -1,44 +1,30 @@
 [
   {
-    "slug": "worley",
-    "title": "Worley Noise",
-    "card": "Animated cellular noise, glowing in overlapping tiles.",
-    "description": "Cellular noise built from drifting, animated feature points. Click, tap, or press any key to reshuffle — toggle the debug view to see the underlying points.",
+    "slug": "kaleidoscope",
+    "title": "Kaleidoscope",
+    "card": "Spiral arms of shrinking circles turn slowly around a glowing center.",
+    "description": "Spiral arms of shrinking, rotating circles turn slowly around the center.",
     "scripts": []
   },
   {
-    "slug": "hex-flow",
-    "title": "Hex Flow",
-    "card": "A grid of hexagons swirls around a point that follows your cursor.",
-    "description": "A grid of hexagons flows and swirls around a center point that follows your pointer. Click or tap to send out a ripple.",
+    "slug": "tree-sway",
+    "title": "Tree Sway",
+    "card": "Eight branching trees sway in place, leaving a soft, drifting trail.",
+    "description": "Eight mirrored branching trees sway continuously via Perlin noise, leaving a soft, slow-fading trail behind them.",
     "scripts": []
   },
   {
-    "slug": "2048",
-    "title": "2048",
-    "card": "A playable 2048 clone — arrow keys or swipe to slide tiles.",
-    "description": "Arrow keys to slide tiles, swipe on touch.",
+    "slug": "horizon",
+    "title": "Horizon",
+    "card": "A geometric sun and grid horizon .",
+    "description": "Old code doodle for a desktop wallpaper. Move your pointer around for a subtle sense of depth.",
     "scripts": []
   },
   {
-    "slug": "maze-solver",
-    "title": "Maze Solver",
-    "card": "A perfect maze, generated live, then pruned down to its through-paths.",
-    "description": "A maze generates live, then gets pruned down to its through-paths. Click, tap, or press any key to regenerate.",
-    "scripts": ["/gallery/shared/grid-layout.js"]
-  },
-  {
-    "slug": "recursive-tree",
-    "title": "Recursive Tree",
-    "card": "A randomized branching fractal — click to grow a new one.",
-    "description": "A randomized branching fractal. Click or tap to grow a new one.",
-    "scripts": []
-  },
-  {
-    "slug": "rotating-squares",
-    "title": "Rotating Squares",
-    "card": "A ring of nested squares, rotating, pulsing, and drifting.",
-    "description": "A ring of nested squares, rotating, pulsing, and drifting. Move your pointer left or right to change the rotation's speed and direction.",
+    "slug": "grid-veins",
+    "title": "Grid Veins",
+    "card": "Organic cave-like veins, rendered with the Marching Squares algorithm.",
+    "description": "Organic cave-like veins, generated live by a cellular automaton and colored by position in the grid. Click or tap to reseed.",
     "scripts": []
   },
   {
@@ -49,24 +35,66 @@
     "scripts": []
   },
   {
-    "slug": "grid-veins",
-    "title": "Grid Veins",
-    "card": "Organic cave-like veins, generated live and colored by position.",
-    "description": "Organic cave-like veins, generated live by a cellular automaton and colored by position in the grid. Click or tap to reseed.",
+    "slug": "currents",
+    "title": "Currents",
+    "card": "Twin terrain ribbons drift past each other over expanding ripples.",
+    "description": "Two noise-driven terrain ribbons scroll past each other, linked by faint threads, over slowly expanding ripples.",
     "scripts": []
   },
   {
-    "slug": "horizon",
-    "title": "Horizon",
-    "card": "A synthwave sun and grid horizon, glowing in the shared theme's colors.",
-    "description": "A synthwave sun and grid horizon. Move your pointer around for a subtle sense of depth.",
+    "slug": "territory",
+    "title": "Territory",
+    "card": "Four colored fronts spread and interlock across the canvas.",
+    "description": "Four colored fronts spread across the canvas until they interlock. Click, tap, or press any key to reseed.",
+    "scripts": []
+  },
+  {
+    "slug": "rotating-squares",
+    "title": "Rotating Squares",
+    "card": "A ring of nested squares, rotating, and drifting.",
+    "description": "A ring of nested squares, rotating, and drifting. Move your pointer left or right to change the rotation's speed and direction.",
+    "scripts": []
+  },
+  {
+    "slug": "hex-flow",
+    "title": "Hex Flow",
+    "card": "A grid of hexagons swirls around a point that follows your cursor.",
+    "description": "A grid of hexagons flows and swirls around a center point that follows your pointer. Click or tap to send out a ripple.",
+    "scripts": []
+  },
+  {
+    "slug": "recursive-tree",
+    "title": "Recursive Tree",
+    "card": "An organic branching fractal — click to grow a new one.",
+    "description": "A organic branching fractal. Click or tap to grow a new one.",
+    "scripts": []
+  },
+  {
+    "slug": "maze-solver",
+    "title": "Maze Solver",
+    "card": "A perfect maze, generated live, then pruned down to its through-paths.",
+    "description": "A maze generates live, then gets pruned down to its through-paths. Click, tap, or press any key to regenerate.",
+    "scripts": ["/gallery/shared/grid-layout.js"]
+  },
+  {
+    "slug": "2048",
+    "title": "2048",
+    "card": "A playable 2048 clone — arrow keys or swipe to slide tiles.",
+    "description": "Arrow keys to slide tiles, swipe on touch.",
     "scripts": []
   },
   {
     "slug": "minesweeper",
     "title": "Minesweeper",
-    "card": "A playable Minesweeper board with a live score.",
+    "card": "An old classic.",
     "description": "A playable Minesweeper board. Left-click (or tap) to reveal a cell, right-click to flag one, space to reset.",
+    "scripts": []
+  },
+  {
+    "slug": "worley",
+    "title": "Worley Noise",
+    "card": "Animated cellular noise, glowing in overlapping tiles.",
+    "description": "Cellular noise built from drifting, animated feature points. Click, tap, or press any key to reshuffle — toggle the debug view to see the underlying points.",
     "scripts": []
   }
 ]

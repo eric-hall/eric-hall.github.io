@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Eric Hall</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/gallery/shared/gallery-page.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="/index.html">Eric Hall</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="/gallery/index.html">Gallery</a></li>
+        <li><a href="/other/index.html">Other Work</a></li>
+        <li><a href="/contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="sketch-title"></h1>
+    <p id="sketch-description"></p>
+
+    <div class="sketch-wrapper" id="sketch-container"></div>
+
+    <p><a href="/gallery/index.html">&larr; Back to gallery</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="/index.html">&larr; Home</a></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="/gallery/shared/theme.js"></script>
+  <script src="/gallery/territory/sketch.js"></script>
+</body>
+</html>
